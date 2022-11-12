@@ -1,0 +1,51 @@
+
+:root{
+    --fontF-Titles: 'Staatliches';
+    --fontF-Text: 'Palanquin', sans-serif;
+
+    --color-Primary: #EFF1FF;
+    --color-FontTitles: #FFFFFF; 
+    --color-TitleBackground: #8E9AAF;
+};
+
+
+head{
+    width: 384px;
+    height: 279px;
+    left: 0px;
+    top: 0px;
+}
+
+head, h1{
+    font-family: var(--fontF-Titles);
+    color: var(--color-FontTitles);
+    text-align: center;
+}
+
+
+body::before{
+    content: '';
+    min-width: 100%;
+    height: 436px;
+    position: absolute;
+    top:0;
+    margin: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--color-TitleBackground);
+}
+
+head, .backgroundTitle{
+
+    width: 384px;
+    height: 49px;
+    left: 0px;
+    top: 201px;
+
+    background: #CBC0D3;
+}
+
+body{
+    font-family: var(--fontF-Text);  
+    background-color: var(--color-Primary);
+}
